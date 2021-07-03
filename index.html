@@ -9,31 +9,199 @@
         .img-div{
             text-align: center;
         }
+        .text-center{
+            text-align: center;
+        }
         img{
             width: 400px;
             border: 1px solid #ccc;
             box-shadow: 0px 0px 1px 0px;
         }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .container h2{
+            font-size: 20px;
+            background: #ef5334;
+            color: #fff;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .command-list table{
+            border: 1px solid #ccc;
+            width: 100%;
+            margin: auto;
+        }
+        .command-list table th{
+            border: 1px solid #ccc;
+            padding: 7px;
+        }
+        .command-list table td{
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .command-list table td span{
+            color: #f05333;
+        }
+        
     </style>
 </head>
 <body>
     <div class="img-div">
         <img src="images/github.jpg" alt="Github images">
     </div>
-    <h1>First time you want to add your project then you need to use this liens of command.</h1>
-    <p>1.echo "# web-course-repo" >> README.md</p>
-    <p>2.git init</p>
-    <p>3.git add .{if you want to add specific file then you can use file name with extention otherwise you use dot .}</p>
-    <p>4.git config --global user.email "your github email" if you need to config user email</p>
-    <p>5.git config --global user.name "your github user name"" if you need to config user name</p>
-    <p>6.git commit -m "first commit"</p>
-    <p>7.git branch -M main</p>
-    <p>8.git remote add origin https://github.com/aftabgroupbd/git-init-code.git</p>
-    <p>9.git push -u origin main</p>
-
-    <h1>If you need to update code then you can use this command</h1>
-    <p>1.git add .</p>
-    <p>2.git commit -m "your commit"</p>
-    <p>3.git push</p>
+    <div class="container command-list">
+        <h2 class="text-center">সব থেকে বেশি ব্যাবহার গিট কমান্ড </h2>
+        <table>
+            <tr>
+                <th>কমান্ড</th>
+                <th>ব্যবহার</th>
+            </tr>
+            <tr>
+                <td>git init</td>
+                <td>লোকাল মেশিনে গিট শুরু করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git clone ssh://git@github.com/[username]/[repository-name].git</td>
+                <td>আগের কোন রিপোজিটোরি লোকাল মেশিনে নিতে হলে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>echo "# your-repository-name" >> README.md</td>
+                <td>রিডমি ফিল তৈরি করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git add [file-name.txt]</td>
+                <td>কোন একটা ফাইল রিপোজিটোরিতে এড করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git add .</td>
+                <td>সব ফাইল রিপোজিটোরিতে এড করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git config --global user.email "your github email"</td>
+                <td> কনফিগারেশনে ইমেইল সেট করতে এই কমান্ড ব্যবহার করা হয়। এটা আপনার ডিভাইসে একবার করলেই হয়</td>
+            </tr>
+            <tr>
+                <td>git config --global user.name "your github user name"</td>
+                <td>কনফিগারেশনে নাম সেট করতে এই কমান্ড ব্যবহার করা হয়। এটা আপনার ডিভাইসে একবার করলেই হয়</td>
+            </tr>
+            <tr>
+                <td>git commit -m "[commit message]"</td>
+                <td>কমিট করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git branch -M branch-name[By default your branch-name is main]</td>
+                <td>লোকাল ব্রান্সের নাম সেট করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git remote add origin https://github.com/user-name/repository-name.git</td>
+                <td>যে রিপোজিটোরিতে এড করতে চান তার জন্যে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git push -u origin branch-name[By default your branch-name is main]</td>
+                <td>অন্য ব্রান্সে পুশ করতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+            <tr>
+                <td>git push</td>
+                <td>পুশ করতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+            <tr>
+                <td>git branch</td>
+                <td>ব্রান্স লিস্ট দেখতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+            <tr>
+                <td>git branch [branch name]</td>
+                <td>নতুন ব্রান্স তৈরি করতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+            <tr>
+                <td>git checkout [branch name]</td>
+                <td>ব্রান্স পরিবর্তন করতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+            <tr>
+                <td>git checkout -b [branch name]</td>
+                <td>নতুন ব্রান্স তৈরি সেই ব্রান্সে যেতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+            <tr>
+                <td>git merge [branch name]</td>
+                <td>এখন যে ব্রান্সে আছেন তার সাথে অন্য ব্রান্স যোগ করতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+            <tr>
+                <td>git merge [source branch] [target branch]</td>
+                <td>এক ব্রান্সকে অন্য ব্রান্সের সাথে যোগ করতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container command-list">
+        <h2 class="text-center">আপনার নতুন ডিভাইসে একদম প্রথম অবস্থায় গিট এড করতে হলে নিচের কমান্ড ব্যবহার করতে হবে</h2>
+        <table>
+            <tr>
+                <th>কমান্ড</th>
+                <th>ব্যবহার</th>
+            </tr>
+            <tr>
+                <td>1.echo "# web-course-repo" >> README.md</td>
+                <td>প্রজেক্টে রিডমি ফাইলে তৈরি করতে হলে</td>
+            </tr>
+            <tr>
+                <td>2.git init</td>
+                <td>লোকাল ভাবে গিট শুরু করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git add .</td>
+                <td>সব ফাইল রিপোজিটোরিতে এড করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git config --global user.email "your github email"</td>
+                <td> কনফিগারেশনে ইমেইল সেট করতে এই কমান্ড ব্যবহার করা হয়। এটা আপনার ডিভাইসে একবার করলেই হয়</td>
+            </tr>
+            <tr>
+                <td>git config --global user.name "your github user name"</td>
+                <td>কনফিগারেশনে নাম সেট করতে এই কমান্ড ব্যবহার করা হয়। এটা আপনার ডিভাইসে একবার করলেই হয়</td>
+            </tr>
+            <tr>
+                <td>git commit -m "[commit message]"</td>
+                <td>কমিট করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git branch -M branch-name[By default your branch-name is main]</td>
+                <td>লোকাল ব্রান্সের নাম সেট করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git remote add origin https://github.com/user-name/repository-name.git</td>
+                <td>যে রিপোজিটোরিতে এড করতে চান তার জন্যে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git push -u origin branch-name[By default your branch-name is main]</td>
+                <td>পুশ করতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container command-list">
+        <h2 class="text-center">আপনি যদি আপনার রিপোজিটোরিতে যুক্ত থাকেন তখন নতুন কোড আউডেট করতে এই কমান্ড ব্যবহার করতে হয়</h2>
+        <table>
+            <tr>
+                <th>কমান্ড</th>
+                <th>ব্যবহার</th>
+            </tr>
+            <tr>
+                <td>git add .</td>
+                <td>সব ফাইল রিপোজিটোরিতে এড করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git add [file-name.txt]</td>
+                <td>কোন একটা ফাইল রিপোজিটোরিতে এড করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git commit -m "[commit message]"</td>
+                <td>কমিট করতে এই কমান্ড ব্যবহার করা হয়</td>
+            </tr>
+            <tr>
+                <td>git push</td>
+                <td>পুশ করতে এই কমান্ড ব্যবহার করা হয়। </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
